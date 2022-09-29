@@ -10,9 +10,9 @@ import millify from "millify";
 import DefaultImage from "../assets/placeholder.png";
 
 //prettier-ignore
-const Property = ({property: {title, coverPhoto, price, rentFrequency, rooms, area, agency, baths, isVerified, externalId}}) => {
+const Property = ({property: {title, coverPhoto, price, rentFrequency, rooms, area, agency, baths, isVerified, externalID}}) => {
 	return (
-		<Link href={`/property/${externalId}`} passHref>
+		<Link href={`/property/${externalID}`} passHref>
 			<Flex justifyContent="flex-start" alignItems="center" flexWrap="wrap" w={420} p="5" paddingTop="0" >
 				<Box>
 					<Image src={coverPhoto ? coverPhoto.url : DefaultImage} width={400} height={260} alt="placeholder house"></Image>
